@@ -1,0 +1,12 @@
+{
+  "name": "App Track Link",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description" : "Application for tracking if you have already visit a link" ,
+  "content_scripts": [{
+      "matches" : [ "http://*/*", "https://*/*"],
+      "js": ["script.js"]
+  }],
+  "browser_action": {"default_popup": "popup.html"},
+  "permissions" : ["history"]
+}
